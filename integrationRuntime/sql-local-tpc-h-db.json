@@ -1,0 +1,7 @@
+{
+	"name": "sql-local-tpc-h-db",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "connection to tpc-h hosting on local computer"
+	}
+}

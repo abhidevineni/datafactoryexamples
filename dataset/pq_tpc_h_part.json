@@ -1,0 +1,20 @@
+{
+	"name": "pq_tpc_h_part",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ingestion_layer_dlstorage",
+			"type": "LinkedServiceReference"
+		},
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "tpc-h/part",
+				"container": "ingestion-layer"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

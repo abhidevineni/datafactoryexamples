@@ -1,0 +1,17 @@
+{
+	"name": "ir-ingestion-layer-storage",
+	"properties": {
+		"type": "Managed",
+		"description": "integration runtime setup on ingestion layer azure storage account",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "East US",
+				"dataFlowProperties": {
+					"computeType": "General",
+					"coreCount": 8,
+					"timeToLiveInMinutes": 60
+				}
+			}
+		}
+	}
+}

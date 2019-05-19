@@ -1,0 +1,60 @@
+{
+	"name": "cp_tpc_h_part",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sql_local_tcp_h",
+			"type": "LinkedServiceReference"
+		},
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "P_PartKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "P_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "P_Mfgr",
+				"type": "varchar"
+			},
+			{
+				"name": "P_Brand",
+				"type": "varchar"
+			},
+			{
+				"name": "P_Type",
+				"type": "varchar"
+			},
+			{
+				"name": "P_Size",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "P_Container",
+				"type": "varchar"
+			},
+			{
+				"name": "P_RetailPrice",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 2
+			},
+			{
+				"name": "P_Comment",
+				"type": "varchar"
+			},
+			{
+				"name": "skip",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"tableName": "[dbo].[part]"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
